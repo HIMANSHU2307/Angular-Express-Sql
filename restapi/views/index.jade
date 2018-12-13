@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  table(border=1)
+    tr
+      td Product Name 
+      td Product Description
+
+    each product in recordset
+      tr 
+        td #{product.ProductName}
+        td #{product.ProductDescription}  
